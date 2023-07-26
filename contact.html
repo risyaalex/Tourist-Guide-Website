@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Yellowknife</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="alg-c">
+      <a href="index.html"
+        ><img src="images/logo.png" width="120" alt="logo" class="logo"
+      /></a>
+      <h2 class="alg-c">City of Yellowknife</h2>
+      <nav class="alg-c">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="row">
+      <section id="title" class="col-12">
+        <h1>Contact</h1>
+      </section>
+      <section class="text col-12">
+        <h3>Contact Us</h3>
+        <p>
+          We value your feedback and inquiries. If you have any questions,
+          suggestions, or concerns, please don't hesitate to reach out to us.
+          Our dedicated team is ready to assist you. You can contact us through
+          the form below or use the provided email address and phone number. We
+          strive to respond to all messages promptly and look forward to hearing
+          from you.
+        </p>
+      </section>
+      <div class="text col-3 hidden"></div>
+      <section class="text col-6">
+        <h4 class="center">Feedback form</h4>
+        <form>
+          <fieldset class="form-group">
+            <h5>Personal Information:</h5>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="firstname"
+                >First name*</label
+              >
+              <div class="col-sm-9">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  required
+                  placeholder="First name"
+                  autofocus
+                  autocomplete="name"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="lastname"
+                >Last name*</label
+              >
+              <div class="col-sm-9">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  required
+                  placeholder="Last name"
+                  autocomplete="family-name"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="phone">Phone*</label>
+              <div class="col-sm-9">
+                <input
+                  class="form-control"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="xxx-xxx-xxxx"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <h5>Login Information:</h5>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="email">Email*</label>
+              <div class="col-sm-9">
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Email"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="password"
+                >Password*</label
+              >
+              <div class="col-sm-9">
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="rememberme"
+                >Remember me*</label
+              >
+              <div class="col-sm-9">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="rememberme"
+                    name="rememberme"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <h5>Feedback:</h5>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label" for="textarea"
+                >Have a question or comment?</label
+              >
+              <div class="col-sm-9">
+                <textarea
+                  class="form-control"
+                  id="textarea"
+                  name="textarea"
+                  rows="4"
+                  placeholder="You can write it here"
+                ></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <h5>Newsletter:</h5>
+            <div class="form-group row">
+              <div class="form-check col-sm-1">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                />
+              </div>
+              <label class="col-sm-11 col-form-label" for="newsletter"
+                >Do you want to subscribe to our news?</label
+              >
+            </div>
+          </fieldset>
+          <div class="form-group row center">
+            <p>
+              <button
+                class="button"
+                type="submit"
+                formmethod="post"
+                formaction="https://httpbin.org/post"
+              >
+                Submit
+              </button>
+              <button class="button-reset" type="reset">Reset</button>
+            </p>
+          </div>
+        </form>
+      </section>
+      <div class="text col-3 hidden"></div>
+    </main>
+    <footer>
+      <a class="button" href="#">Back to Top</a>
+      <script>
+        document.write(
+          '<p class="alg-c copy">All rights reserved &copy; ' +
+            new Date().getFullYear() +
+            " Oleksandra Antonova</p>"
+        );
+      </script>
+    </footer>
+  </body>
+</html>
